@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset ="UTF-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+    <style>
+        .button {
+    border: none;
+  color: rgb(255, 255, 255);
+  padding: 10px 23px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 4px;
+  cursor: pointer}
+  .dropbtn {
+    background-color: #4c90af;
+    border: none;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    padding: 10px 23px;
+    margin: 2px 4px;
+    cursor: pointer;
+}
+.dropdown {
+    display: inline-block;
+    position: relative
+}
+.dropdown-content {
+    position: absolute;
+    background-color: lightgrey;
+    min-width: 200px;
+    display: none;
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: red;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: blue;
+}
+    .button {background-color: #4c90af;} 
+    </style>
+    <body> 
+    <button class="button button">Profile</button>
+    <button class="button button">Registration</button>
+    <a href="faculty info.html">
+    <button class="button button">Faculty Info</button></a>
+    <a href="http://paperfactorymnnit.pythonanywhere.com/">   
+    <button class="button button">Books & Notes</button></body></a>
+    <button class="button button">Attendence</button>
+    <button class="button button">Exam Schedule</button>
+    <button class="button button">Certificates</button>
+    <a href="club.html">
+    <button class="button button">Clubs</button></a>
+    <div class="dropdown">
+      <button class="dropbtn">Webmails</button>
+      <div class="dropdown-content">
+      <a href="mailto:academics@mnnit.ac.in">Request </a>
+      <a href="mailto:deanacademics@mnnit.ac.in"> Grievances </a>
+      <a href="mailto:admissioncell@mnnit.ac.in""> Registration/Admission</a>
+      <a href="mailto:examcell@mnnit.ac.in"> Examination/Result</a>
+      </div>
+      </div>
+    <a href="Main Page.html">  
+    <button class="button button">Logout</button></a>
+    <a href="mnnitinfo.html">
+    <img src="mnnitimage.jpg" width="1350px" height="580px"></a>
+   </body>
+   </html>
