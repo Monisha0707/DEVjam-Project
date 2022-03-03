@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: center;
+  position : fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 170px;
+}
+
+.sidenav a {
+  padding: 15px 15px 15px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #e79b0f;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+/* Style the header */
+.header {
+    /* border-radius: 15 px 15 px 15 px 15 px */
+  background-color: orange;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnavleft {
+  overflow: hidden; 
+  background-color: #333;
+}
+
+.topnavright{
+  overflow:hidden;
+  background-color:#333;
+}
+
+/* Style the topnav links */
+.topnavleft a {
+  float:left;
+  display: initial;
+  color: #c3bb47;
+  text-align: center;
+  padding: 20px 70px;
+  text-decoration: none;
+}
+.topnavselected a {
+  float:left;
+  display: initial;
+  color: rgb(221, 221, 221);
+  text-align: center;
+  padding: 20px 70px;
+  text-decoration: none;
+}
+.topnavright a {
+  float:right;
+  display: initial;
+  color: #c34747;
+  text-align: center;
+  padding: 20px 70px;
+  text-decoration: none;
+}
+
+
+/* Change color on hover */
+.topnavleft a:hover {
+  background-color: rgb(221, 221, 221);
+  color: rgb(11, 77, 243);
+   }
+}
+</style>
+</head>
+
+<body>
+    <div class="header">
+        <img src = "symbol.png"height ="100" width ="100" alt = "NIT Allahabad">
+        <h1 style="height: auto;width: auto;color: rgb(209, 59, 0);">Student Portal</h1>
+      </div>
+      
+      <div class="topnavleft">
+        <a href="Main Page.html">Home</a>
+        <a href="http://www.mnnit.ac.in/" target = "blank">Institute Website</a>
+        <!-- <a href="Notifications.html">Notifications</a> -->
+
+        <div class="topnavselected">
+            <a href="#">Notifications</a>  
+        </div>
+        
+        <div class = "topnavright">
+          <a href="#"><strong>Login</strong></a>
+          <a href="#"><strong>About</strong></a>
+        </div>
+      
+      </div>
+    <iframe src="http://www.mnnit.ac.in/index.php/notice-board" height="800" width="1800" title="Iframe Example"  style="border:none;"></iframe>
+</body>
